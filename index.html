@@ -20,14 +20,16 @@
 
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
-    <form action="contact.php" method="POST">
+    <form action="https://formsubmit.co/agbalayasamad@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://web-portfolio-site.vercel.app?success=true">
       <button type="submit">Send Message</button>
     </form>
-    <div class="response success">✅ Message sent successfully</div>
-    <div class="response error">❌ Something went wrong. Please try again.</div>
+    <div class="response success" style="display: none;">✅ Message sent successfully</div>
+    <div class="response error" style="display: none;">❌ Something went wrong. Please try again.</div>
   </section>
 </body>
 </html>
