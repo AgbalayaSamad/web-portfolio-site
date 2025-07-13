@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Samad Web Builder</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <section class="hero">
+    <h1>I Build Fast, Modern & Eye-Catching Websites for Small Businesses</h1>
+    <p>Need a sleek, mobile-friendly, conversion-optimized website?</p>
+    <a href="#contact" class="cta">Let’s Talk</a>
+  </section>
+
+  <section class="portfolio">
+    <h2>Work Samples</h2>
+    <img src="assets/preview1.jpg" alt="Project Preview"/>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form action="contact.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="response success">✅ Message sent successfully</div>
+    <div class="response error">❌ Something went wrong. Please try again.</div>
+  </section>
+</body>
+</html>

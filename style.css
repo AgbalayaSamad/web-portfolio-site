@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
+.hero {
+  background: #111;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.cta {
+  background: #ff5a5f;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+.contact input,
+.contact textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+.response {
+  display: none;
+  margin-top: 10px;
+}
+.success { color: green; }
+.error { color: red; }
