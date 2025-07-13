@@ -3,33 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Samad Web Builder</title>
+  <title>Samad – Web Design for Luxury Brands</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <section class="hero">
-    <h1>I Build Fast, Modern & Eye-Catching Websites for Small Businesses</h1>
-    <p>Need a sleek, mobile-friendly, conversion-optimized website?</p>
-    <a href="#contact" class="cta">Let’s Talk</a>
-  </section>
+  <header class="hero">
+    <h1>Luxury Web Design for Fashion Brands</h1>
+    <p>Timeless aesthetics. Flawless functionality. Built to elevate your online presence.</p>
+    <a href="#contact" class="cta">Request Your Website</a>
+  </header>
 
   <section class="portfolio">
-    <h2>Work Samples</h2>
-    <img src="assets/preview1.jpg" alt="Project Preview"/>
+    <h2>Our Signature Work</h2>
+    <div class="preview">
+      <img src="assets/preview1.jpg" alt="Elegant fashion website preview"/>
+    </div>
   </section>
 
   <section class="contact" id="contact">
-    <h2>Contact Me</h2>
+    <h2>Request a Custom Website</h2>
     <form action="https://formsubmit.co/agbalayasamad@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="brand" placeholder="Brand or Business Name" required />
+      <textarea name="message" placeholder="Tell us about your brand & vision..." required></textarea>
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://web-portfolio-site.vercel.app?success=true">
-      <button type="submit">Send Message</button>
+      <input type="hidden" name="_next" value="https://luxury-web-portfolio-site.vercel.app?success=true">
+      <button type="submit">Submit Request</button>
     </form>
-    <div class="response success" style="display: none;">✅ Message sent successfully</div>
-    <div class="response error" style="display: none;">❌ Something went wrong. Please try again.</div>
+    <div class="response success" style="display: none;">✅ Your request has been received. We'll get back to you shortly.</div>
+    <div class="response error" style="display: none;">❌ Something went wrong. Please try again later.</div>
   </section>
 </body>
 </html>
