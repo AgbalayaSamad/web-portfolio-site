@@ -3,37 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Samad – Web Design for Luxury Brands</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <title>Samad | Web Design for Luxury Fashion Brands</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header class="hero">
-    <h1>Luxury Web Design for Fashion Brands</h1>
-    <p>Timeless aesthetics. Flawless functionality. Built to elevate your online presence.</p>
-    <a href="#contact" class="cta">Request Your Website</a>
+    <button class="toggle-mode" onclick="toggleMode()">🌓</button>
+    <h1 class="fade-in">Web Design for Elite Fashion Brands</h1>
+    <p class="fade-in">Gracefully crafted digital experiences to elevate high-end brands.</p>
+    <a href="#contact" class="cta fade-in">Book Your Design</a>
   </header>
 
   <section class="portfolio">
-    <h2>Our Signature Work</h2>
-    <div class="preview">
+    <h2 class="fade-in">Curated Elegance</h2>
+    <div class="preview fade-in">
       <img src="assets/preview1.jpg" alt="Elegant fashion website preview"/>
     </div>
   </section>
 
   <section class="contact" id="contact">
-    <h2>Request a Custom Website</h2>
-    <form action="https://formsubmit.co/agbalayasamad@gmail.com" method="POST">
+    <h2 class="fade-in">Let's Craft Your Online Presence</h2>
+    <form action="https://formsubmit.co/agbalayasamad@gmail.com" method="POST" class="fade-in">
       <input type="text" name="name" placeholder="Full Name" required />
       <input type="email" name="email" placeholder="Email Address" required />
-      <input type="text" name="brand" placeholder="Brand or Business Name" required />
-      <textarea name="message" placeholder="Tell us about your brand & vision..." required></textarea>
+      <input type="text" name="brand" placeholder="Luxury Brand Name" required />
+      <textarea name="message" placeholder="Describe your brand vision, needs, and goals..." required></textarea>
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://luxury-web-portfolio-site.vercel.app?success=true">
+      <input type="hidden" name="_next" value="https://web-portfolio-site.vercel.app/confirmation.html">
       <button type="submit">Submit Request</button>
     </form>
-    <div class="response success" style="display: none;">✅ Your request has been received. We'll get back to you shortly.</div>
-    <div class="response error" style="display: none;">❌ Something went wrong. Please try again later.</div>
   </section>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        el.style.opacity = 1;
+        el.style.transform = "translateY(0)";
+      });
+    });
+  </script>
 </body>
 </html>
