@@ -8,32 +8,29 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1 data-aos="fade-down">Aureum Studio</h1>
-    <p class="tagline" data-aos="fade-down" data-aos-delay="100">Luxury Web Design for Modern Businesses</p>
-    <button id="theme-toggle">Switch to Dark Mode</button>
+  <header data-aos="fade-down">
+    <div class="header-top">
+      <h1>Aureum Studio</h1>
+      <button id="theme-toggle">Switch to Dark Mode</button>
+    </div>
+    <p class="tagline">Luxury Web Design for Modern Businesses</p>
   </header>
 
   <main>
-    <section class="preview" data-aos="fade-up">
-      <h2>A Preview of Your Future Website</h2>
-      <img src="preview.png" alt="Website Preview" />
-    </section>
-
-    <section class="contact" data-aos="fade-up" data-aos-delay="200">
-      <h2>Contact Me</h2>
+    <section class="contact" data-aos="fade-up">
+      <h2>Let’s Build Something Exceptional</h2>
       <form action="https://formsubmit.co/agbalayasamad@gmail.com" method="POST">
         <input type="hidden" name="_next" value="thankyou.html" />
         <input type="hidden" name="_captcha" value="false" />
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Tell me what you need..." required></textarea>
-        <button type="submit">Send Request</button>
+        <input type="text" name="name" placeholder="Your Name" required data-aos="fade-up" data-aos-delay="100" />
+        <input type="email" name="email" placeholder="Your Email" required data-aos="fade-up" data-aos-delay="150" />
+        <textarea name="message" placeholder="Tell me what you need..." required data-aos="fade-up" data-aos-delay="200"></textarea>
+        <button type="submit" data-aos="zoom-in" data-aos-delay="250">Send Request</button>
       </form>
     </section>
   </main>
 
-  <footer data-aos="fade-up" data-aos-delay="300">
+  <footer data-aos="fade-up">
     <p>&copy; 2025 Aureum Studio. All rights reserved.</p>
     <a href="https://wa.me/2348128817896" target="_blank">Message on WhatsApp</a>
   </footer>

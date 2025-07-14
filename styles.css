@@ -13,7 +13,17 @@ body.dark {
 
 header {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 1rem;
+  position: relative;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .tagline {
@@ -21,9 +31,8 @@ header {
   color: #999;
 }
 
-button {
-  margin-top: 1rem;
-  padding: 0.7rem 1.4rem;
+#theme-toggle {
+  padding: 0.5rem 1rem;
   border: none;
   background: #000;
   color: #fff;
@@ -32,7 +41,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#theme-toggle:hover {
   background: #333;
 }
 
@@ -60,6 +69,21 @@ input, textarea {
 textarea {
   height: 150px;
   resize: vertical;
+}
+
+button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #333;
 }
 
 footer {
